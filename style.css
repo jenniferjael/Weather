@@ -1,0 +1,44 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: whitesmoke;
+}
+.row {
+  margin-left: 0%;
+  margin-right: 0%;
+}
+.col-6 {
+  border: solid;
+}
+h2 {
+  width: 100%;
+  background-color: gray;
+  text-align: center;
+}
+
+.inputField {
+  text-align: left;
+}
+input[type="text"] {
+  height: 30px;
+  width: 200px;
+  background-color: #89cff0;
+  font-weight: 10px;
+  font-size: 20px;
+  border-style: inset;
+  color: black;
+  margin-bottom: 5%;
+  border-radius: 5px;
+  vertical-align:text-top;
+ 
+}
+h6 {
+  text-decoration: underline;
+}
+h6,p{
+    border-style: inset;
+    border-color: #89cff0;
+    margin-top: 5%;
+}
+h5{
+    text-decoration: underline;
+}
