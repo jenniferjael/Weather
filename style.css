@@ -42,3 +42,20 @@ h6,p{
 h5{
     text-decoration: underline;
 }
+.dayOne{
+  text-align: center;
+}
+.tempOneDay{
+  text-align: center;
+}
+
+
+#five-day-forecast {
+  display: inherit;
+  margin: 2px;
+}
+
+#index1{
+  background-color: green;
+ 
+}
