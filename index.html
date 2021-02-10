@@ -1,73 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="Description" content="Enter your description here" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-    />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Title</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <!--title-->
 
     <div container="title">
-      <h2>Weather Dashboard</h2>
+        <h2>Weather Dashboard</h2>
     </div>
     <!--search for city sidebar-->
     <div class="container">
-      <div class="row row-cols-2">
-        <div class="col">
-          <div class="inputField">
-            <input type="text" id="inputCity" placeholder="Enter City Name" />
-            <input type="button" class="submitBtn" value="search" />
-            <div class="savedCities">
-              <!-- Cannot be input tags. Use ul li. -->
-              <form action="/action_page.php">
-                <label for="LastCities">Last Cities Searched:</label><br />
-                <ul id="listCities"></ul>
-              </form>
-              <div>
-                  <button onclick="deleteItems()">Clear Cities</button>
+        <div class="row row-cols-2">
+            <div class="col">
+                <div class="inputField">
+                    <input type="text" id="inputCity" placeholder="Enter City Name" />
+                    <div>
+                        <input type="button" class="submitBtn" value="search" />
+                    </div>
+                </div>
+                <div class="savedCities">
+                    <!-- Cannot be input tags. Use ul li. -->
+                    <form action="/action_page.php">
+                        <label for="LastCities">Recent Searches(click on)</label><br />
+                        <ul id="listCities"></ul>
+                    </form>
+                    <div>
+                        <button class="clear" onclick="deleteItems()">Clear Cities</button>
+                    </div>
+
                 </div>
             </div>
-          </div>
-        </div>
 
-        <!--display city name,logo,temperature,humidity,wind speed, and uv index-->
-        <div class="container">
-          <div class="col">
-            <div class="displayWeatherConditions">
-              <h6 class="cityName">City Name:</h6>
-              <p class="date">date:</p>
-              <p class="icon">Icon:</p>
-              <p class="temperature">Temperature:</p>
-              <p class="humidity">Humidity:</p>
-              <p class="windSpeed">Wind Speed:</p>
-              <p class="uvIndex">UV Index:</p>
+            <!--display city name,logo,temperature,humidity,wind speed, and uv index-->
+            <div class="container">
+                <div class="col">
+                    <div class="displayWeatherConditions">
+                        <h6 class="cityName">City Name:</h6>
+                        <p class="date">date:</p>
+                        <p class="icon">Icon:</p>
+                        <p class="temperature">Temperature:</p>
+                        <p class="humidity">Humidity:</p>
+                        <p class="windSpeed">Wind Speed:</p>
+                        <p class="uvIndex">UV Index:</p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
 
+    <h5 class="forecast">5 Days Forecast</h5>
     <div class="row">
-      <h5 class="forecast">5 Days Forecast:</h5>
-      <div id="five-day-forecast"></div>
+        <div id="five-day-forecast"></div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>

@@ -2,11 +2,7 @@ body {
   font-family: "Times New Roman", Times, serif;
   background-color: lightgray;
 }
-.grid {
-  display: grid;
-  grid-template-rows: 7rem 7rem;
-  grid-template-columns: 10rem 10rem;
-}
+
 .col-6 {
   border: solid;
 }
@@ -16,7 +12,6 @@ h2 {
   text-align: center;
   font-weight: bolder;
   text-decoration: underline;
-  padding: 5%;
 }
 
 .inputField {
@@ -25,16 +20,23 @@ h2 {
 input[type="text"] {
   height: 30px;
   width: 200px;
-  background-color: #89cff0;
+  background-color: lightgreen;
   font-weight: 10px;
   font-size: 20px;
   border-style: inset;
   color: black;
-  margin-bottom: 5%;
+  margin-bottom: 2px;
   border-radius: 5px;
   vertical-align:text-top;
  
 }
+.submitBtn{
+  margin-top: 0;
+  background-color: lightgreen;
+  margin-bottom: 30px;
+  border-radius: 30px;
+}
+
 h6,p{
     border-style: inset;
     border-color: #89cff0;
@@ -43,6 +45,9 @@ h6,p{
 }
 h5{
     text-decoration: underline;
+    color: black;
+    font-weight: bolder;
+    font-size: 40px;
 }
 .dayOne{
   text-align: center;
@@ -51,13 +56,48 @@ h5{
   text-align: center;
 }
 
-
+.row{
+  margin-left: 20px;
+  
+}
 #five-day-forecast {
   display: inherit;
-  margin: 2px;
+  text-align: center;
+  
 }
 
 .containerForest{
   background-color: #89cff0;
 }
+form{
 
+ border-radius: 10px;
+background-color: #89cff0;
+}
+label{
+  text-decoration: underline;
+  font-weight: bold;
+}
+.clear{
+ border-radius: 30px;
+ background-color:lightgreen;
+ margin-top: 70px;
+ float: right;
+}
+ul{
+  text-align: center;
+}
+li{
+  border: solid;
+  border-color: gray;
+  border-radius: 10px;
+  text-align: center;
+  list-style: none;
+}
+#index1,
+#index2,
+#index3,
+#index4,
+#index5{
+  background-color: #89cff0;
+}
