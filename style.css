@@ -1,10 +1,11 @@
 body {
   font-family: "Times New Roman", Times, serif;
-  background-color: whitesmoke;
+  background-color: lightgray;
 }
-.row {
-  margin-left: 0%;
-  margin-right: 0%;
+.grid {
+  display: grid;
+  grid-template-rows: 7rem 7rem;
+  grid-template-columns: 10rem 10rem;
 }
 .col-6 {
   border: solid;
@@ -13,6 +14,9 @@ h2 {
   width: 100%;
   background-color: gray;
   text-align: center;
+  font-weight: bolder;
+  text-decoration: underline;
+  padding: 5%;
 }
 
 .inputField {
@@ -31,13 +35,11 @@ input[type="text"] {
   vertical-align:text-top;
  
 }
-h6 {
-  text-decoration: underline;
-}
 h6,p{
     border-style: inset;
     border-color: #89cff0;
     margin-top: 5%;
+    padding: 10px;
 }
 h5{
     text-decoration: underline;
@@ -55,7 +57,7 @@ h5{
   margin: 2px;
 }
 
-#index1{
-  background-color: green;
- 
+.containerForest{
+  background-color: #89cff0;
 }
+

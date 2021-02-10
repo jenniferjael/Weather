@@ -127,6 +127,33 @@ submitBtn.addEventListener("click", function (event) {
   localStorage.setItem("city-storage", JSON.stringify(storage));
 
   displayWeather(inputCity.value);
+  render();
+});
+function render(){
+ $('#listCities').empty();
+  var storage = JSON.parse(localStorage.getItem("city-storage"));
+ for(var i = 0; i < storage.length; i++){
+   console.log(storage[i]);
+   var liTag = $('<li>');
+    liTag.attr('id', i);
+    $('#listCities').append(liTag);
+    $('#' + i).text(storage[i]);
+ }
+}
+var ulTag = $('#listCities');
+ulTag.click(function (event) {
+  var element = event.target;
+  var indexEl = element.id
+  var cityName = $('#'+ indexEl);
+ var nameEl = cityName.text();
+ displayWeather(nameEl);
+
+  // var index = element.id; // will give us the id of the li element the user clicks on
+  // console.log(index);
+  // var megadeth = $('#' + index); // calling the id of the element and concatenating it with the index variable
+  // var city = nmegadeth.text(); // will give us the text (the city name) of the targeted element
+  // console.log(city);
+  // displayCityWeather(city); // will run the function and give us the data of the city
 });
 
 
@@ -135,3 +162,11 @@ submitBtn.addEventListener("click", function (event) {
 if (localStorage.getItem("city-storage") === null) {
   localStorage.setItem("city-storage", JSON.stringify([]));
 }
+
+function deleteItems() {
+  localStorage.clear();
+  ulTag.empty();
+  location.reload();
+}
+
+render();
