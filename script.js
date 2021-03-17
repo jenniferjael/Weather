@@ -13,6 +13,7 @@ var forecastH = document.querySelector(".forecastH");
 var dayOne = document.querySelector(".dayOne");
 var tempOneDay = document.querySelector(".tempOneDay");
 var humidityOneDay = document.querySelector(".humidityOneDay");
+var uvContainer = document.querySelector("#uvContainer");
 
 //WHEN I search for a city
 //THEN I am presented with current and future conditions for that city and that city is added to the search history
@@ -57,7 +58,24 @@ function displayWeather(inputCity) {
         })
         .then(function (response) {
           //console.log(response);
-          uvIndex.textContent = "UV Index:" + " " + response.current.uvi;
+          uvContainer.textContent = response.current.uvi;
+          var uvValue = response.current.uvi;
+          if(uvValue >= 0 && uvValue < 3){
+            uvContainer.addClass("green");
+  
+          }
+
+          else if(uvValue >= 3 && uvValue < 6){
+            uvContainer.addClass("yellow");
+
+          }
+          else if (uvValue >= 6 && uvValue < 8){
+            uvContainer.addClass("orange");
+
+          }
+          else{
+            uvContainer.addClass("red");
+          }
         });
 
       // One call api to get weather forecast for 5 days
