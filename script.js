@@ -61,20 +61,20 @@ function displayWeather(inputCity) {
           uvContainer.textContent = response.current.uvi;
           var uvValue = response.current.uvi;
           if(uvValue >= 0 && uvValue < 3){
-            uvContainer.addClass("green");
+            uvContainer.classList.add("green");
   
           }
 
           else if(uvValue >= 3 && uvValue < 6){
-            uvContainer.addClass("yellow");
+            uvContainer.classList.add("yellow");
 
           }
           else if (uvValue >= 6 && uvValue < 8){
-            uvContainer.addClass("orange");
+            uvContainer.classList.add("orange");
 
           }
           else{
-            uvContainer.addClass("red");
+            uvContainer.classList.add("red");
           }
         });
 
@@ -124,8 +124,8 @@ function displayWeather(inputCity) {
             // Appended 5-day forecast data to the div element with an id of five-day-data
             $("#five-day-forecast").append(`<div id=index${i} <p class="date">${formatDate}</p>
             <img src="${iconForecastUrl}"/>
-            <p class="temp">${tempForecast}</p>
-            <p class="humidity">${humidityForecast}</p></div>`);
+            <p class="temp">Temp: ${tempForecast}</p>
+            <p class="humidity"> Humidity: ${humidityForecast}</p></div>`);
           }
         });
     });

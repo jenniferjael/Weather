@@ -1,115 +1,130 @@
 body {
-  font-family: "Times New Roman", Times, serif;
-  background-color: lightgray;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: transparent;
+  background-image: linear-gradient(
+      rgba(0, 0, 255, 0.5),
+      rgba(255, 255, 0, 0.5)
+    ),
+    url("https://cdn.hipwallpaper.com/i/16/27/JouwpC.jpg");
 }
 
-.col-6 {
-  border: solid;
-}
 h2 {
   width: 100%;
-  background-color: gray;
   text-align: center;
   font-weight: bolder;
-  text-decoration: underline;
+  font-style: unset;
+  padding: 40px;
 }
 
 .inputField {
   text-align: left;
 }
 input[type="text"] {
-  height: 30px;
-  width: 200px;
-  background-color: lightgreen;
-  font-weight: 10px;
-  font-size: 20px;
-  border-style: inset;
+  height: 40px;
+  width: 300px;
+  background-color: turquoise;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 20px;
+  font-size: 30px;
+  border-style: double;
+  border-color: teal;
   color: black;
   margin-bottom: 2px;
-  border-radius: 5px;
-  vertical-align:text-top;
- 
+  vertical-align: text-top;
 }
-.submitBtn{
+.submitBtn {
   margin-top: 0;
-  background-color: lightgreen;
+  background-color: turquoise;
   margin-bottom: 30px;
-  border-radius: 30px;
+  border-style: double;
+  border-color: teal;
 }
-
-h6,p{
-    border-style: inset;
-    border-color: #89cff0;
-    margin-top: 5%;
-    padding: 10px;
+.displayWeatherConditions {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 80px;
+  margin-right: 80px;
+  border-style: double;
+  border-width: thick;
+  border-color: turquoise;
+}
+h6,
+p {
+  background-color: turquoise;
+  font-family: Arial, Helvetica, sans-serif;
 }
 h5{
-    text-decoration: underline;
-    color: black;
-    font-weight: bolder;
-    font-size: 40px;
+
+  color:black;
+  font-weight: bold;
+  font-size: 40px;
+  margin-left: 200px;
+  margin-top: 10px;
 }
-.dayOne{
+.dayOne {
   text-align: center;
 }
-.tempOneDay{
+.tempOneDay {
   text-align: center;
 }
 
-.row{
-  margin-left: 20px;
-  
-}
 #five-day-forecast {
   display: inherit;
   text-align: center;
-  
 }
-
-.containerForest{
+.fore-container {
+  margin-left: 200px;
+  display: flex;
+  margin-bottom: 50px;
+}
+.containerForest {
   background-color: #89cff0;
 }
-form{
-
- border-radius: 10px;
-background-color: #89cff0;
+form {
+  border-style: double;
+  border-color: teal;
+  background-color: turquoise;
+  margin-left: 80px;
+  margin-right: 50px;
 }
-label{
+
+label {
   text-decoration: underline;
   font-weight: bold;
 }
-.clear{
- border-radius: 30px;
- background-color:lightgreen;
- margin-top: 70px;
- float: right;
+.clear {
+  background-color: turquoise;
+  border-color: teal;
+  margin-left: 80px;
 }
-ul{
+ul {
   text-align: center;
+  font-family: inherit;
+  text-decoration: underline;
 }
-li{
-  border: solid;
-  border-color: gray;
-  border-radius: 10px;
+li {
   text-align: center;
   list-style: none;
+}
+li:hover{
+  background-color:yellow;
 }
 #index1,
 #index2,
 #index3,
 #index4,
-#index5{
+#index5 {
   background-color: #89cff0;
 }
-.green{
+.green {
   background-color: green;
 }
-.orange{
+.orange {
   background-color: orange;
 }
-.yellow{
+.yellow {
   background-color: yellow;
 }
-.red{
+.red {
   background-color: red;
 }
