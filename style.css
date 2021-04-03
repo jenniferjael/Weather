@@ -10,10 +10,10 @@ body {
 
 h2 {
   width: 100%;
-  text-align: center;
   font-weight: bolder;
   font-style: unset;
   padding: 40px;
+  color: aliceblue;
 }
 
 .inputField {
@@ -30,10 +30,12 @@ input[type="text"] {
   border-color: teal;
   color: black;
   margin-bottom: 2px;
+  margin-left: 80px;
   vertical-align: text-top;
 }
 .submitBtn {
   margin-top: 0;
+  margin-left: 80px;
   background-color: turquoise;
   margin-bottom: 30px;
   border-style: double;
@@ -63,6 +65,7 @@ h5{
 }
 .dayOne {
   text-align: center;
+  padding: 20px;
 }
 .tempOneDay {
   text-align: center;
@@ -114,7 +117,10 @@ li:hover{
 #index3,
 #index4,
 #index5 {
+  width: 100%;
   background-color: #89cff0;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 .green {
   background-color: green;
@@ -127,4 +133,38 @@ li:hover{
 }
 .red {
   background-color: red;
+}
+.weatherCity{
+  margin-left: 0%;
+}
+.weatherCol{
+  
+}
+.fore-container{
+  margin-left: 40%;
+  width: 100%;
+}
+.forecast{
+  margin-left: 60px;
+  color: aliceblue;
+}
+@media only screen and (max-width: 1000px) {
+  body {
+    width: 100%;
+  }
+#index1,
+#index2,
+#index3,
+#index4,
+#index5 {
+ width: auto;
+ margin-left: 0%;
+ margin-right: 0%;
+}
+.fore-container{
+  margin-left: 5%;
+}
+.weatherCol{
+  width: 100%;
+}
 }
