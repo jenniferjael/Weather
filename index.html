@@ -13,67 +13,112 @@
 </head>
 
 <body>
-  <!--title-->
-
-  <div container="title">
-    <h2>WEATHER BY JAEL</h2>
-  </div>
-  <!--search for city sidebar-->
-
-  <div class="row">
-    <div class="col-md-4">
-      <div class="inputField">
-        <input type="text" id="inputCity" placeholder="Enter City Name" />
-        <div>
-          <input type="button" class="submitBtn" value="search" />
+  <!--Main row-->
+  <div class="row main">
+    <div class="col-md-6">
+      <div class="row">
+        <div container="title">
+          <h2>WEATHER BY JAEL</h2>
         </div>
       </div>
-    </div>
-  </div>
-
-
-
-
-
-  <div class="row">
-    <div class="col-md-4 weatherCity">
-      <div class="savedCities">
-        <!-- Cannot be input tags. Use ul li. -->
-        <form action="/action_page">
-          <label for="LastCities">SAVED CITIES</label><br />
-          <ul id="listCities"></ul>
-        </form>
-        <div>
-          <button class="clear" onclick="deleteItems()">Clear</button>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4 weatherCol">
-      <div class="container">
-        <div class="displayWeatherConditions">
-          <h6 class="cityName">City Name:</h6>
-          <p class="date">Date:</p>
-          <p class="icon">Icon:</p>
-          <p class="temperature">Temperature:</p>
-          <p class="humidity">Humidity:</p>
-          <p class="windSpeed">Wind Speed:</p>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="inputField">
+            <input type="text" id="inputCity" placeholder="Enter City Name">
+          </div>
           <div>
-            UV Index:
-            <div id="uvContainer"></div>
+            <input type="button" class="submitBtn" value="search" />
+          </div>
+        </div>
+      </div>
+      <div class="row w-100">
+        <div class="col-lg-8 w-100">
+          <div class="savedCities">
+            <form action="/action_page">
+              <label for="LastCities">SAVED CITIES</label><br />
+              <ul id="listCities"></ul>
+            </form>
+            <div>
+              <button class="clear" onclick="deleteItems()">Clear</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-   
-
-  <!--display city name,logo,temperature,humidity,wind speed, and uv index-->
-<div class="row">
-    <h5 class="forecast">5 Days Forecast</h5>
-    <div class="fore-container">
-      <div id="five-day-forecast"></div>
+    <div class="col-md-6" style="margin-top: 10%;width: 100%;">
+      <div class="row">
+        <div class="col-lg-8 w-100">
+          <div class="container conditions">
+            <div class="displayWeatherConditions">
+              <h6 class="cityName">City Name:</h6>
+              <p class="date">Date:</p>
+              <p class="icon">Icon:</p>
+              <p class="temperature">Temperature:</p>
+              <p class="humidity">Humidity:</p>
+              <p class="windSpeed">Wind Speed:</p>
+              <div>
+                UV Index:
+                <div id="uvContainer"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
-</div>
+    <div class="row">
+      <div class=container>
+        <h5 class="forecast">5 Days Forecast</h5>
+        <div class="fore-container">
+          <div id="five-day-forecast"></div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>

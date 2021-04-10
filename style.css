@@ -11,9 +11,9 @@ body {
 h2 {
   width: 100%;
   font-weight: bolder;
-  font-style: unset;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   padding: 40px;
-  color: aliceblue;
+  color: white;
 }
 
 .inputField {
@@ -22,12 +22,12 @@ h2 {
 input[type="text"] {
   height: 40px;
   width: 300px;
-  background-color: turquoise;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 20px;
-  font-size: 30px;
-  border-style: double;
-  border-color: teal;
+  background-color: whitesmoke;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 10px;
+  font-size: 20px;
+  border-style: groove;
+ border-color: teal;
   color: black;
   margin-bottom: 2px;
   margin-left: 80px;
@@ -36,7 +36,7 @@ input[type="text"] {
 .submitBtn {
   margin-top: 0;
   margin-left: 80px;
-  background-color: turquoise;
+  background-color: white;
   margin-bottom: 30px;
   border-style: double;
   border-color: teal;
@@ -46,22 +46,18 @@ input[type="text"] {
   margin-bottom: 20px;
   margin-left: 80px;
   margin-right: 80px;
-  border-style: double;
-  border-width: thick;
-  border-color: turquoise;
+  border-color:whitesmoke;
 }
 h6,
 p {
-  background-color: turquoise;
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 h5{
 
   color:black;
   font-weight: bold;
   font-size: 40px;
-  margin-left: 200px;
-  margin-top: 10px;
 }
 .dayOne {
   text-align: center;
@@ -84,9 +80,8 @@ h5{
   background-color: #89cff0;
 }
 form {
-  border-style: double;
-  border-color: teal;
-  background-color: turquoise;
+  
+  background-color:transparent;
   margin-left: 80px;
   margin-right: 50px;
 }
@@ -96,21 +91,20 @@ label {
   font-weight: bold;
 }
 .clear {
-  background-color: turquoise;
-  border-color: teal;
+  background-color: whitesmoke;
   margin-left: 80px;
 }
 ul {
-  text-align: center;
-  font-family: inherit;
-  text-decoration: underline;
+  
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ 
 }
 li {
-  text-align: center;
   list-style: none;
 }
 li:hover{
-  background-color:yellow;
+background-color: wheat;
+align-self: stretch;
 }
 #index1,
 #index2,
@@ -118,9 +112,9 @@ li:hover{
 #index4,
 #index5 {
   width: 100%;
-  background-color: #89cff0;
-  margin-left: 5%;
-  margin-right: 5%;
+  background-color: transparent;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 .green {
   background-color: green;
@@ -137,18 +131,16 @@ li:hover{
 .weatherCity{
   margin-left: 0%;
 }
-.weatherCol{
-  
-}
+
 .fore-container{
   margin-left: 40%;
   width: 100%;
 }
 .forecast{
-  margin-left: 60px;
-  color: aliceblue;
+  color: whitesmoke;
+  margin: 30px;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 700px) {
   body {
     width: 100%;
   }
@@ -157,12 +149,10 @@ li:hover{
 #index3,
 #index4,
 #index5 {
- width: auto;
- margin-left: 0%;
- margin-right: 0%;
+ width: 100%;
 }
 .fore-container{
-  margin-left: 5%;
+  width: 100%;
 }
 .weatherCol{
   width: 100%;
