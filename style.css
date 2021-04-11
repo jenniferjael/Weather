@@ -150,11 +150,22 @@ align-self: stretch;
 #index4,
 #index5 {
  width: 100%;
+ margin-left: 0%;
 }
 .fore-container{
   width: 100%;
+  margin-left: 0%;
 }
 .weatherCol{
+  width: 100%;
+}
+
+.container-m{
+  margin: 0%;
+  width: 100%;
+}
+#five-day-forecast{
+  margin-left: 0%;
   width: 100%;
 }
 }
