@@ -9,9 +9,10 @@ The Weather-Forecast uses OpenWeatherMap API to get the current weather by city 
 To check the present weather just enter the name of the city and press search.Inmidiately, you will be presented with the weather information of that city along with 5 days forecast.
 
 # Images
-<img src='images/forecast.png' alt='5 days forecast' width='50%' height='50%'>
-<img src='images/searchPage.png' alt='search page' width='50%' height='50%'>
-<img src='images/weatherDashboard.png' alt='weather Dashboard' width='50%' height='50%'>
+<img src='main.png' alt='5 days forecast' width='50%' height='50%'>
+<img src='forecast.png' alt='search page' width='50%' height='50%'>
+<img src='city.png' alt='weather Dashboard' width='50%' height='50%'>
+<img src='responsive.png' alt='weather Dashboard' width='50%' height='50%'>
 
 # links
 ### <https://jenniferjael.github.io/Weather/>
